@@ -1,0 +1,159 @@
+/* App.css */
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ProductList styles */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card {
+  width: 30%;
+  height: 20%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 20%;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.product-card p {
+  font-size: 1rem;
+  margin: 0 1rem 1rem;
+}
+
+/* ProductDetail styles */
+.product-detail {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.product-detail img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-detail h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.product-detail p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card {
+  width: 30%;
+  height: 350px; /* Fixed height for all cards */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  max-height: 60%; /* Adjust the image height as needed */
+  object-fit: cover;
+}
+
+.product-card .product-info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Initially hide the price and label */
+.product-card .product-info p {
+  font-size: 1rem;
+  margin: 0;
+  display: none;
+}
+
+/* Show the price and label on hover */
+.product-card:hover .product-info p {
+  display: block;
+}
+
+/* ProductDetail styles */
+.product-detail {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.product-detail img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-detail h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.product-detail p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
